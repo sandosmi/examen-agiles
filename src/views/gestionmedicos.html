@@ -77,7 +77,7 @@
 
               <div class="row">
                 <div class="col-12">
-                  <select class="form-select">
+                  <select class="form-select" id="especialidad">
                     <option selected>Especialidad</option>
                     <option value="1">Ortopedia</option>
                     <option value="2">Cirugia</option>
@@ -99,14 +99,14 @@
                 <div class="col 12 col-md-6">
                   <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-circle"></i></span>
-                    <input type="text" class="form-control" placeholder="email">
+                    <input type="text" class="form-control" placeholder="email"id=email>
                   </div>
                 </div>
                 
                 </div>
                 <div class="row">
                   <div class="col-12 col-md-6">
-                    <select class="form-select">
+                    <select class="form-select" id="sede">
                       <option selected>Sede</option>
                       <option value="1">Molinos</option>
                       <option value="2">Industriales</option>
@@ -116,7 +116,7 @@
                     </select>
                   </div>
                   <div class="col-12 col-md-6">
-                    <select class="form-select">
+                    <select class="form-select" id="horario">
                       <option selected>Horarios</option>
                       <option value="1">06:00-14:00</option>
                       <option value="2">14:00-22:00</option>
@@ -128,8 +128,8 @@
                 <div class="row mt-3">
                   <div class="col-12">
                     <div class="form-floating">
-                      <textarea class="form-control" placeholder="descripcion general" id="floatingTextarea"></textarea>
-                      <label for="floatingTextarea">Descripcion</label>
+                      <textarea class="form-control" placeholder="descripcion general" id="descripcion"></textarea>
+                      <label for="descripcion">Descripcion</label>
                     </div>
                   </div>
                 </div>
@@ -137,7 +137,7 @@
                   <div class="col-12">
                     <div class="input-group mb-3">
                       <span class="input-group-text" id="basic-addon1"><i class="bi bi-camera-fill"></i></span>
-                      <input type="text" class="form-control" placeholder="fotografia">
+                      <input type="text" class="form-control" placeholder="fotografia" id="imagen">
                     </div>
                   </div>
                 </div>
@@ -157,7 +157,7 @@
   <script>
   new WOW().init();
   </script>
-  <script src="../controllers/controladormedicos.js"></script><!-- para llamar el controlador -->
+  <script src="../controllers/controladormedicos.js" type="module"></script><!-- para llamar el controlador- se debe poner el tipo modular por lo que estamos usando las palabras reservadas import y export -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script><!-- sweetalert -->
 
 </body>
