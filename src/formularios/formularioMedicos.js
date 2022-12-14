@@ -38,5 +38,7 @@ export function capturarDatos(etiquetaNombre,etiquetaDocumento,etiquetaEspeciali
         descripcion:descripcionMedico,
         foto:imagenMedico,
     }
-    console.log(datosFormularioMedico)
+
+    validarFormulario(datosFormularioMedico)
+  
 }
