@@ -1,3 +1,5 @@
+import {registrarMedico} from '../../services/registrarMedico.js'
+
 export function validarFormulario(datosFormulario){//se da el nombre a la funcion que se quiera
     //console.log("Estamos validando...")
     //console.log(datosFormulario)
@@ -31,8 +33,9 @@ export function validarFormulario(datosFormulario){//se da el nombre a la funcio
         etiquetaNombre.classList.remove("is-invalid")//para agregar un estilo a la caja de datos
        etiquetaDocumento.classList.add("is-invalid")
     }else{
+        registrarMedico(datosFormulario)
         etiquetaNombre.classList.remove("is-invalid")//para agregar un estilo a la caja de datos
-       etiquetaDocumento.classList.remove("is-invalid")
+        etiquetaDocumento.classList.remove("is-invalid")
     }
 
 }
